@@ -98,7 +98,7 @@ if __name__ == '__main__':
     print(x_argmin)
     print(f_min)
     print(trace)
-    '''
+    
 
     x0 = np.array([10, 10])
     bfgs = BFGS()
@@ -106,3 +106,4 @@ if __name__ == '__main__':
     print(x_argmin)
     print(f_min)
     print(trace)
+    '''
