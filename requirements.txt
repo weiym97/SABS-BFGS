@@ -91,6 +91,7 @@ pyzmq==23.2.0
 qtconsole==5.4.0
 QtPy==2.2.0
 requests==2.28.1
+-e git+ssh://git@github.com/weiym97/SABS-BFGS.git
 scipy==1.10.0
 Send2Trash==1.8.0
 setuptools==67.2.0
