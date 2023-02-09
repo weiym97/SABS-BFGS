@@ -6,24 +6,24 @@ import scipy.optimize
 class BFGS():
     '''This is the place for class comments'''
 
-    def minimize(self,fun,x0,jac=None,args=(),tol=1e-8, return_trace = False):
+    def minimize(self, fun, x0, jac=None, args=(), tol=1e-8, return_trace = False):
         '''This is the place for minimize comments'''
-        jac,x,H,jac_old = self.initialize(fun,jac,x0)
+        jac,x,H,jac_old = self.initialize(fun, jac, x0)
 
         if return_trace:
             trace = self.initialize_trace()
 
         while True:
             # Itegrate over to get the next state
-            p,alpha,s,jac_new,y = self.iteration(fun,jac,x,jac_old,H)
+            p,alpha,s,jac_new,y = self.iteration(fun, jac, x, jac_old, H)
             if return_trace:
-                trace = self.update_trace(trace,x,p,alpha,s)
+                trace = self.update_trace(trace, x, p, alpha, s)
 
             # Update x, H,jac_old for the next step
-            x,H,jac_old = self.update_state(x,H,y,s,jac_new)
+            x,H,jac_old = self.update_state(x, H, y, s, jac_new)
 
             # If the norm of jacobi is smaller than the threshold, then break
-            if  np.linalg.norm(jac_old,ord=2) < tol:
+            if  np.linalg.norm(jac_old, ord=2) < tol:
                 break
         if return_trace:
             return x,fun(x),trace
