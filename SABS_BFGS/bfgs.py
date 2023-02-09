@@ -1,5 +1,3 @@
-import collections.abc
-
 import autograd.numpy as np
 from autograd import grad
 import scipy.optimize
@@ -81,29 +79,3 @@ class BFGS():
         temp_1 = (s.dot(y) + y.dot(H).dot(y)) / (s.dot(y)) ** 2 * np.outer(s,s)
         temp_2 = - (np.matmul(H,np.outer(y,s)) + np.matmul(np.outer(s,y),H)) / s.dot(y)
         return H + temp_1 + temp_2
-
-
-def func_1(x):
-    return x[0] ** 2 + x[1] ** 2
-
-
-
-
-if __name__ == '__main__':
-    '''
-    fun_class = Resenbrock()
-    x0 = np.array([-1.5,-1.5])
-    bfgs = BFGS()
-    x_argmin,f_min,trace = bfgs.minimize(fun_class.fun,x0,return_trace=True)
-    print(x_argmin)
-    print(f_min)
-    print(trace)
-    
-
-    x0 = np.array([10, 10])
-    bfgs = BFGS()
-    x_argmin, f_min,trace = bfgs.minimize(func_1, x0,return_trace=True)
-    print(x_argmin)
-    print(f_min)
-    print(trace)
-    '''
