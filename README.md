@@ -6,7 +6,7 @@
 ### Description
 This package is an implementation of the BFGS algorithm.
 
-[BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm) is an efficient way to find the global maximum/minimum of a function.
+[BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm) is an efficient way to find the maximum/minimum of a function.
 
 This project is a practical session of [Modelling and Scientific Computing Module](https://sabs-r3.github.io/scientific-computing) in the [SABS](https://www.sabsr3.ox.ac.uk) programme. 
 
@@ -61,4 +61,4 @@ See below an visualisation of how it works
 Read [introduction.ipynb](./introduction.ipynb) for more information, which includes a detailed description of how BFGS works.
 
 ### Credits
-Thank [Martin Robinson](https://github.com/martinjrobins) for introducing us to this great module during the last two weeks. Also, I have received much help from all the demonstrators. I would like to express our gratitude to [Nele Quast](https://www.linkedin.com/in/nele-quast-760921130/?originalSubdomain=uk) for helping us on the visualisation of this project.
+Thank [Martin Robinson](https://github.com/martinjrobins) for introducing us to this great module during the last two weeks. Also, I have received much help from all the demonstrators. I would like to express my gratitude to [Nele Quast](https://www.linkedin.com/in/nele-quast-760921130/?originalSubdomain=uk) for helping us on the visualisation of this project.
