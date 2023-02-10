@@ -1,3 +1,7 @@
+[![Run unit tests](https://github.com/weiym97/SABS-BFGS/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/weiym97/SABS-BFGS/actions/workflows/unit_tests.yml)
+
+[![Run on multiple OS](https://github.com/weiym97/SABS-BFGS/actions/workflows/os-tests.yml/badge.svg)](https://github.com/weiym97/SABS-BFGS/actions/workflows/os-tests.yml)
+
 # SABS-BFGS
 
 ### Description
@@ -39,7 +43,7 @@ x_argmin, f_min = bfgs.minimize(lambda x: x**2, x0)
 print('Global minimum: ',x_argmin)
 print('Minimal Value: ',format(float(f_min),".2f"))
 ```
-#### Example 2: find the global minimum of Rosenbrock function$f(x,y)=(1-x)^2+(y-x^2)^2$.
+#### Example 2: find the global minimum of Rosenbrock function $f(x,y)=(1-x)^2+(y-x^2)^2$.
 ```
 import numpy as np
 from SABS_BFGS.bfgs import BFGS
@@ -51,5 +55,11 @@ x_argmin,fmin = bfgs.minimize(func,x0)
 print('Global minimum: ',np.round(x_argmin,decimals=2))
 print('Minimal Value: ',format(float(f_min),".2f"))
 ```
-See below the visualisation of how it works
+See below an visualisation of how it works
 ![Visualisation of BFGS on Rosenbrock function](./BFGS_visualisation.gif)
+
+### Details
+Read [introduction.ipynb] for more information(./information.ipynb).
+
+### Credits
+We thank [Martin Robinson](https://github.com/martinjrobins) for introducing us to this great module during the last two weeks. Also, we have received much help from all the demonstrators. We would like to express[Nele Quast](https://www.linkedin.com/in/nele-quast-760921130/?originalSubdomain=uk) for helping me on the visualisation of this project.
