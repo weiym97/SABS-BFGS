@@ -1,5 +1,4 @@
 [![Run unit tests](https://github.com/weiym97/SABS-BFGS/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/weiym97/SABS-BFGS/actions/workflows/unit_tests.yml)
-
 [![Run on multiple OS](https://github.com/weiym97/SABS-BFGS/actions/workflows/os-tests.yml/badge.svg)](https://github.com/weiym97/SABS-BFGS/actions/workflows/os-tests.yml)
 
 # SABS-BFGS
