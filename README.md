@@ -58,7 +58,7 @@ See below an visualisation of how it works
 ![Visualisation of BFGS on Rosenbrock function](./BFGS_visualisation.gif)
 
 ### Details
-Read [introduction.ipynb] for more information(./information.ipynb).
+Read [introduction.ipynb] (./information.ipynb) for more information.
 
 ### Credits
-We thank [Martin Robinson](https://github.com/martinjrobins) for introducing us to this great module during the last two weeks. Also, we have received much help from all the demonstrators. We would like to express[Nele Quast](https://www.linkedin.com/in/nele-quast-760921130/?originalSubdomain=uk) for helping me on the visualisation of this project.
+Thank [Martin Robinson](https://github.com/martinjrobins) for introducing us to this great module during the last two weeks. Also, I have received much help from all the demonstrators. I would like to express our gratitude to [Nele Quast](https://www.linkedin.com/in/nele-quast-760921130/?originalSubdomain=uk) for helping us on the visualisation of this project.
