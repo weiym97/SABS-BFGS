@@ -4,10 +4,46 @@ import scipy.optimize
 
 
 class BFGS():
-    '''This is the place for class comments'''
+    '''
+    Global otimisation using BFGS methods.
+    Practice in Modelling and Scientific Computing Module.
+    Written by Yiming Wei 2023-02-09.
+    '''
 
-    def minimize(self, fun, x0, jac=None, args=(), tol=1e-8, return_trace = False):
-        '''This is the place for minimize comments'''
+    def minimize(self, fun, x0, jac=None, tol=1e-8, return_trace = False):
+
+        '''
+        The method to look for the global minimum
+        :param fun: callable f(x).
+                    Objective function.
+        :param x0: ndarray.
+                   Starting point.
+        :param jac: callable vector function f'(x).
+                    the first order derivative of the objective function.
+                    If unspecified, we use autograd
+        :param args:
+        :param tol: float.
+                    stop iterating when ||f'(x)||<tol
+        :param return_trace:bool.
+                            whether to return the trace of optimization.
+        :return:
+        -------
+        x: ndarray.
+           The global minimal point.
+        y: float.
+           The minimum of f(x), evalutated at x.
+        trace: dictionary.
+           Tracing back the process of optimization, include x_k,p_k,alpha_k,s_k.
+           See introduction.ipynb for details and visualisation.
+
+        -------
+        Example:
+        import numpy as np
+        from SABS_BFGS.bfgs import BFGS
+        bfgs = BFGS()
+        x0 = np.array([1.0])
+        x_argmin, f_min = bfgs.minimize(lambda x: x**2, x0)
+        '''
         jac,x,H,jac_old = self.initialize(fun, jac, x0)
 
         if return_trace:
