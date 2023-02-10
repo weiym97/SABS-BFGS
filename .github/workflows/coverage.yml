@@ -31,7 +31,5 @@ jobs:
         coverage run -m pytest --cov=SABS_BFGS.bfgs tests/test_bfgs.py   
     - name: Run codecov
       if: success()
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         codecov
